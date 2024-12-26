@@ -3,54 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benim Web Sitem</title>
+    <title>Portfolio | Ana Sayfa</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#anasayfa">Ana Sayfa</a></li>
-                <li><a href="#hakkimda">Hakkımda</a></li>
-                <li><a href="#projeler">Projeler</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="logo">Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#anasayfa">Ana Sayfa</a></li>
+                    <li><a href="#hakkimda">Hakkımda</a></li>
+                    <li><a href="#projeler">Projeler</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
 
     <main>
         <section id="anasayfa" class="hero">
-            <h1>Hoş Geldiniz</h1>
-            <p>Bu benim kişisel web sitem</p>
-        </section>
-
-        <section id="hakkimda">
-            <h2>Hakkımda</h2>
-            <p>Buraya kendiniz hakkında bilgi ekleyebilirsiniz.</p>
-        </section>
-
-        <section id="projeler">
-            <h2>Projelerim</h2>
-            <div class="proje-container">
-                <div class="proje">
-                    <h3>Proje 1</h3>
-                    <p>Proje açıklaması</p>
-                </div>
-                <div class="proje">
-                    <h3>Proje 2</h3>
-                    <p>Proje açıklaması</p>
+            <div class="hero-content">
+                <h1>Merhaba, Ben <span class="highlight">İsminiz</span></h1>
+                <p class="subtitle">Frontend Geliştirici & UI/UX Tasarımcı</p>
+                <div class="cta-buttons">
+                    <a href="#projeler" class="btn primary">Projelerimi Gör</a>
+                    <a href="#iletisim" class="btn secondary">İletişime Geç</a>
                 </div>
             </div>
         </section>
 
-        <section id="iletisim">
-            <h2>İletişim</h2>
-            <p>Email: ornek@email.com</p>
+        <section id="hakkimda" class="about">
+            <div class="container">
+                <h2>Hakkımda</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Frontend geliştirme ve UI/UX tasarımı konularında tutkulu bir yazılımcıyım. Modern web teknolojileri ile kullanıcı dostu arayüzler geliştiriyorum.</p>
+                        <div class="skills">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeler" class="projects">
+            <div class="container">
+                <h2>Projelerim</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="proje1.jpg" alt="Proje 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Proje Adı</h3>
+                            <p>Proje açıklaması burada yer alacak. Kullanılan teknolojiler ve projenin amacı.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn small">Demo</a>
+                                <a href="#" class="btn small secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Diğer proje kartları buraya eklenebilir -->
+                </div>
+            </div>
+        </section>
+
+        <section id="iletisim" class="contact">
+            <div class="container">
+                <h2>İletişime Geç</h2>
+                <div class="contact-content">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Adınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-posta Adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mesajınız" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Gönder</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Tüm hakları saklıdır.</p>
+        <div class="container">
+            <p>&copy; 2024 Tüm hakları saklıdır.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html> 
